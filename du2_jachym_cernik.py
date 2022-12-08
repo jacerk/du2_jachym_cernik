@@ -19,12 +19,6 @@ try:
         writer_week = csv.writer(vystup_tyden)
         writer_year = csv.writer(vystup_rok)
         for row in reader:
-            
-            # try vyzkousi jestli jsou data v poradku na prvnim radku
-            try:
-                firstRow = float(row[3])
-            except ValueError:
-                print("Na prvním řádku vstupního souboru jsou chybně zadána data")
 
             # vypocet prumeru tydne 
             if len(calenweek) == 0:
