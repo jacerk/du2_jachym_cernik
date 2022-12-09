@@ -1,11 +1,11 @@
 Program slouží k převzetí dát denních průtoku. A jejím výstupem jsou dva .csv dokumenty, jeden má týdenní průměry za celou škálu dát a druhý roční.
 
 
-Program má v počátku definované proměnné a listy které jsou potřeba k ukládání hodnot a k uskutečnění procesů potřebných k výpočtu průměru. 
+Program má v počátku definované proměnné které jsou potřeba k ukládání hodnot a k uskutečnění procesů potřebných k výpočtu průměru. 
 
 Následně jsou otevřeny všechny nutné soubory, vstup.csv jsou úvodní data a výstup rok a týden jsou nově vytvořené soubory pro uchování výstupu. Spolu s tím jsou definovány writery. 
 
-Funkce try je implementována za účelem nalezení chyb jako je FileNotFound a 
+Funkce try je implementována za účelem nalezení chyb jako je FileNotFound a Permission errors
 
 Následně začíná for loop pro každý řádek. Program pracuje na stejné bázi jak pro týdenní tak i pro měsíční průměry. 
 Je zadán list ve kterém se ukládají hodnoty s každého řádku pro určitou dobu (týden nebo rok) nejprve jsou ale prevzané hodnoty pro datum a ID kterého budou následně identifikovat danou dobu ve výstupu. Data průtoku jsou připojená k listu pomocí append. 
